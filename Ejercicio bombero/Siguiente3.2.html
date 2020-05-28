@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Siguiente3.2</title>
+</head>
+<body>
+			<h1>El gato esta a salvo, a quien bajas al piso ahora?</h1>
+	<span></span>
+	</br>
+	Perro:<input type="radio" id="dog" name="radio">
+	Niño: <input type="radio" id="kid" name="radio">
+
+	<script>
+		function f1()
+		{
+		 var dog=document.getElementById("dog")
+		 var kid=document.getElementById("kid")
+		  if (dog.checked==true) 
+		  document.location.href="Muerte Gato.html"
+		  else if (kid.checked==true)
+		  document.location.href="Final2.html"
+		  else
+		  alert("debes elegir a uno")
+		}
+	</script>
+	<button onclick="f1()">salvar</button>
+</body>
+</html>

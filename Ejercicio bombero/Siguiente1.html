@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Continuacion bombero</title>
+</head>
+<body>
+	<h1>A quien bajas ahora?</h1>
+	<span></span>
+	</br>
+	Niño:<input type="radio" id="kid" name="radio">
+	Gato: <input type="radio" id="cat" name="radio">
+
+	<script>
+		function f1()
+		{
+		 var kid=document.getElementById("kid")
+		 var cat=document.getElementById("cat")
+		  if (kid.checked==true) 
+		  document.location.href="Siguiente2.html"
+		  else if (cat.checked==true)
+		  document.location.href="Siguiente3.html"
+		  else
+		  alert("debes elegir a uno")
+		}
+	</script>
+	<button onclick="f1()">salvar</button>
+</body>
+</html>

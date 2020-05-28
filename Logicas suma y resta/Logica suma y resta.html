@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Suma y resta</title>
+</head>
+<body>
+	<h1>Sumas y restas</h1>
+	<p>Ejercicio:
+		•	Encuentra la lógica en las siguientes operaciones y números.
+<br> 
+    <br>3+1=24
+    <br>5+2=37
+    <br>7+2=59
+    <br>8+1=79
+    <br>7+5=212
+    <br>8+5=313
+    <br>15+3=1218
+    <br>37+39=276
+        <br>
+        <br>Solucion:
+		<br>En este ejercicio la logica que seguimos para hallar el resutado es: primero restamos y luego sumamos hayando asi el numero despues del igual.
+
+</p>
+	<br>
+	<span>Escribe tus numeros aquí (se recomienda poner el numero mayor arriba para apreciar mejor el ejercicio):</span>
+	<br>
+	Numero 1:<input type="text" id="n1">
+    <br>
+	<select id="operators">
+		<option value="+">+</option>
+	</select>
+	<br>
+	Numero 2:<input type="text" id="n2">
+	<br>
+	<script>
+		function calc()
+		{
+		 //parseInt es para tomar solo los valores numericos establecidos en el input y document.getElementById es para tomar un elemento por medio de una id definida
+		 var n1=parseInt(document.getElementById('n1').value);
+		 var n2=parseInt(document.getElementById('n2').value);
+		 var oper=document.getElementById('operators').value;
+         if (oper === '+') {
+         	document.getElementById('result').value = (n1-n2)+""+(n1+n2);
+         }
+		}
+	</script>
+	<br>
+	<button onclick="calc();">=</button>
+	<br>
+	<!--disabled inhabilita la edicion de la casilla result-->
+	Resultado<input type="text" id="result" disabled>
+</body>
+</html>

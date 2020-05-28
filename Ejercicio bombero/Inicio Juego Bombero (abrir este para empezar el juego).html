@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio Bombero</title>
+</head>
+<body>
+	<h1>Solucion ejercicio del bombero</h1>
+	<p>Los bomberos son llamados de emergencia a rescatar un niño un perro y un gato en un edificio que está en llamas. Todos están en un piso alto. El bombero tiene que escoger como rescatar a los tres individuos. Solo puede llevar uno a la vez. Sin embargo puede mantener un individuo en la escalera siempre. El perro y el gato tienen collar y se pueden amarrar. Pero el perro no se puede quedar con el gato porque se lo come. Ni tampoco con el niño porque lo muerde. Debes poder bajar a los tres uno por uno sin que pase lo anterior.
+    <br>
+    <br>
+	Solucion </p>
+	<span>Elije a quien salvar primero</span>
+	</br>
+	Perro:<input type="radio" id="dog" name="radio">
+	Niño:<input type="radio" id="kid" name="radio">
+	Gato: <input type="radio" id="cat" name="radio">
+
+	<script>
+		function f1()
+		{
+		 var dog=document.getElementById("dog")
+		 var kid=document.getElementById("kid")
+		 var cat=document.getElementById("cat")
+
+		 if(dog.checked==true)
+		  document.location.href="Siguiente.html"
+		  else if (kid.checked==true) 
+		  document.location.href="Muerte Gato.html"
+		  else if (cat.checked==true)
+		  document.location.href="Muerte niño.html"
+		  else
+		  alert("debes elegir a uno")
+		}
+	</script>
+	<button onclick="f1()">salvar</button>
+</body>
+</html>

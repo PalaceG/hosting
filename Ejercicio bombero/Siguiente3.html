@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Siguiente3</title>
+</head>
+<body>
+		<h1>Bajas al gato o lo dejas en la escalera?</h1>
+	<span></span>
+	</br>
+	Lo dejo en la escalera:<input type="radio" id="stairs" name="radio">
+	Lo bajo al piso:<input type="radio" id="floor" name="radio">
+
+	<script>
+		function f1()
+		{
+		 var floor=document.getElementById("floor")
+		 var starir=document.getElementById("stairs")
+
+		 if(floor.checked==true)
+		  document.location.href="Siguiente3.2.html"
+		  else if (stairs.checked==true) 
+		  document.location.href="Muerte Gato.html"
+		  else
+		  alert("debes elegir a uno")
+		}
+	</script>
+	<button onclick="f1()">salvar</button>
+</body>
+</html>
